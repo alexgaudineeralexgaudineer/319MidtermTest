@@ -1,0 +1,26 @@
+.navbar-brand {
+  font-size: 35px;
+  color: #3e67ce;
+  padding-right: 10px;
+}
+
+.navbar-brand:hover {
+  color: #3e67ce;
+}
+
+.about-header {
+  padding-top: 10px;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.row {
+  padding-top: 50px;
+  display: flex;
+}
+
+.column {
+  text-align: center;
+  flex: 50%;
+}

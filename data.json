@@ -2,62 +2,59 @@
   "dogs": {
     "products": [
       {
-        "name": "Dog product 1",
-        "description": "Description for dog product 1",
-        "image": "images/dogProducts/dog-product1.jpg",
-        "priceInCents": 1599
+        "name": "Dog Chew Toy 1",
+        "description": "This is a description for Dog Chew Toy 1",
+        "image": "images/dogProducts/dog-chew-toy1.jpg",
+        "priceInCents": 1299
       },
       {
-        "name": "Dog product 2",
-        "description": "Description for dog product 2",
-        "image": "images/dogProducts/dog-product2.jpg",
-        "priceInCents": 1899
+        "name": "Dog Chew Toy 2",
+        "description": "This is a description for Dog Chew Toy 2",
+        "image": "images/dogProducts/dog-chew-toy2.jpg",
+        "priceInCents": 1499
       },
       {
-        "name": "Dog product 3",
-        "description": "Description for dog product 3",
-        "image": "images/dogProducts/dog-product3.jpg",
-        "priceInCents": 2199
+        "name": "Dog Chew Toy 3",
+        "description": "This is a description for Dog Chew Toy 3",
+        "image": "images/dogProducts/dog-chew-toy3.jpg",
+        "priceInCents": 1699
       }
     ],
     "clinics": [
       {
-        "name": "Dog clinic 1",
-        "description": "Description for dog clinic 1",
-        "image": "images/dogClinics/dog-clinic1.jpg",
-        "priceInCents": 2599
+        "name": "Dog Clinic 1",
+        "description": "This is a description for Dog Clinic 1",
+        "image": "images/dogClinics/dog-clinic1.jpg"
       },
       {
-        "name": "Dog clinic 2",
-        "description": "Description for dog clinic 2",
-        "image": "images/dogClinics/dog-clinic2.jpg",
-        "priceInCents": 2799
+        "name": "Dog Clinic 2",
+        "description": "This is a description for Dog Clinic 2",
+        "image": "images/dogClinics/dog-clinic2.jpg"
       },
       {
-        "name": "Dog clinic 3",
-        "description": "Description for dog clinic 3",
-        "image": "images/dogClinics/dog-clinic3.jpg",
-        "priceInCents": 2999
+        "name": "Dog Clinic 3",
+        "description": "This is a description for Dog Clinic 3",
+        "image": "images/dogClinics/dog-clinic3.jpg"
       }
     ],
     "food": [
       {
-        "name": "Dog food 1",
-        "description": "Description for dog food 1",
+        "name": "Dog Food 1",
+        "description": "This is a description for Dog Food 1",
         "image": "images/dogFood/dog-food1.jpg",
-        "priceInCents": 1299
+        "priceInCents": 1999
       },
       {
-        "name": "Dog food 2",
-        "description": "Description for dog food 2",
+        "name": "Dog Food 2",
+        "description": "This is a description for Dog Food 2",
         "image": "images/dogFood/dog-food2.jpg",
-        "priceInCents": 1499
+        "priceInCents": 2199
       },
       {
-        "name": "Dog food 3",
-        "description": "Description for dog food 3",
+        "name": "Dog Food 3",
+        "description": "This is a description for Dog Food 3",
         "image": "images/dogFood/dog-food3.jpg",
-        "priceInCents": 1699
+        "priceInCents": 2399
       }
     ]
   },
