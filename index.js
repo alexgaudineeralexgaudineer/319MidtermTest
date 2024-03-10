@@ -4,6 +4,7 @@ let productsGrid = document.getElementById("products-grid");
 fetch('./data.json')
   .then((response) => response.json())
   .then((data) => {
+    console.log("Data loaded:", data);
     loadDogProducts(data.dogs.products);
     loadDogClinics(data.dogs.clinics);
     loadDogFood(data.dogs.food);
@@ -14,16 +15,19 @@ fetch('./data.json')
 
 // load dog products
 function loadDogProducts(products) {
+  console.log("Loading Dog Products:", products);
   createSection("Dog Products", generateProductHTML(products));
 }
 
 // load dog clinics
 function loadDogClinics(clinics) {
+  console.log("Loading Dog Clinics:", clinics);
   createSection("Dog Clinics", generateProductHTML(clinics));
 }
 
 // load dog food
 function loadDogFood(food) {
+  console.log("Loading Dog Food:", food);
   createSection("Dog Food", generateProductHTML(food));
 }
 
@@ -36,9 +40,7 @@ function createSection(title, content) {
       </div>
     </div>
     <div class="row mb-4">
-      <div class="col">
-        ${content}
-      </div>
+      ${content}
     </div>
   `;
   productsGrid.innerHTML += sectionHTML;
@@ -46,13 +48,16 @@ function createSection(title, content) {
 
 // generate HTML for products
 function generateProductHTML(products) {
-  let productHTML = '';
+  console.log("Generating HTML for products:", products);
+  let productHTML = '<div class="row">'; // Start a new row for each product category
   for (let i = 0; i < products.length; i++) {
     let product = products[i];
-    productHTML += `<div class="col d-flex flex-column">
+    console.log("Processing product:", product);
+
+    productHTML += `<div class="col-4"> <!-- Adjust the column size as needed -->
       <div class="card" style="height: 100%;">
-        <div class="mb-1 p-3 d-flex justify-content-center align-items-center" style="height: 100px;">
-          <img src="./${product.image}" class="img-fluid" style="max-height: 100%" />
+        <div class="mb-1 p-3 d-flex justify-content-center align-items-center" style="height: 100%;">
+          <img src="./${product.image}" class="img-fluid" style="height: 100%; object-fit: cover;" />
         </div>
         <div class="overflow-hidden px-3 mt-2" style="height: 50px;">
           ${product.name}
@@ -61,6 +66,8 @@ function generateProductHTML(products) {
       </div>
     </div>`;
   }
+
+  productHTML += '</div>'; // End the row
+  console.log("Generated HTML:", productHTML);
   return productHTML;
 }
-

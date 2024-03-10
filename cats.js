@@ -47,7 +47,6 @@ function createSection(title, content) {
 }
 
 // generate HTML for products
-// generate HTML for products
 function generateProductHTML(products) {
   console.log("Generating HTML for products:", products);
   let productHTML = '';
@@ -55,10 +54,10 @@ function generateProductHTML(products) {
     let product = products[i];
     console.log("Processing product:", product);
 
-    productHTML += `<div class="col d-flex flex-column">
+    productHTML += `<div class="col-4 mb-3"> <!-- col-4 for 3 cards in a row -->
       <div class="card" style="height: 100%;">
-        <div class="mb-1 p-3 d-flex justify-content-center align-items-center" style="height: 100px;">
-          <img src="./${product.image}" class="img-fluid" style="max-height: 100%" />
+        <div class="mb-1 p-3 d-flex justify-content-center align-items-center" style="height: 100%;">
+          <img src="./${product.image}" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" />
         </div>
         <div class="overflow-hidden px-3 mt-2" style="height: 50px;">
           ${product.name}
@@ -71,4 +70,3 @@ function generateProductHTML(products) {
   console.log("Generated HTML:", productHTML);
   return productHTML;
 }
-
