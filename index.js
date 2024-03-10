@@ -4,37 +4,42 @@ let productsGrid = document.getElementById("products-grid");
 fetch('./data.json')
   .then((response) => response.json())
   .then((data) => {
-    console.log("Data:", data); // Log the received data
     loadDogProducts(data.dogs.products);
     loadDogClinics(data.dogs.clinics);
     loadDogFood(data.dogs.food);
   })
   .catch(function (err) {
-    console.error("Error fetching data:", err); // Log any fetch errors
+    console.error("Error fetching data:", err);
   });
 
 // load dog products
 function loadDogProducts(products) {
-  console.log("Loading Dog Products:", products); // Log the products being loaded
-  let productHTML = generateProductHTML(products);
-  productsGrid.innerHTML += `<div class="row mb-4"><h3>Dog Products</h3></div>`;
-  productsGrid.innerHTML += productHTML;
+  createSection("Dog Products", generateProductHTML(products));
 }
 
 // load dog clinics
 function loadDogClinics(clinics) {
-  console.log("Loading Dog Clinics:", clinics); // Log the clinics being loaded
-  let clinicHTML = generateProductHTML(clinics);
-  productsGrid.innerHTML += `<div class="row mb-4"><h3>Dog Clinics</h3></div>`;
-  productsGrid.innerHTML += clinicHTML;
+  createSection("Dog Clinics", generateProductHTML(clinics));
 }
 
 // load dog food
 function loadDogFood(food) {
-  console.log("Loading Dog Food:", food); // Log the food being loaded
-  let foodHTML = generateProductHTML(food);
-  productsGrid.innerHTML += `<div class="row mb-4"><h3>Dog Food</h3></div>`;
-  productsGrid.innerHTML += foodHTML;
+  createSection("Dog Food", generateProductHTML(food));
+}
+
+// create a section with a title and content
+function createSection(title, content) {
+  let sectionHTML = `
+    <div class="row mb-4">
+      <div class="col">
+        <h3>${title}</h3>
+      </div>
+    </div>
+    <div class="row mb-4">
+      ${content}
+    </div>
+  `;
+  productsGrid.innerHTML += sectionHTML;
 }
 
 // generate HTML for products
