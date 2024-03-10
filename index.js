@@ -24,15 +24,32 @@ function createSection(products, categoryName) {
   let sectionHTML = `
     <div class="row mb-4">
       <div class="col">
-        <h3>${categoryName}</h3>
+        <h2>${categoryName}</h2>
       </div>
     </div>
-    <div class="row mb-4">
-      ${generateProductHTML(products)}
-    </div>
-  `;
+    <div class="row mb-4">`;
+
+  for (let i = 0; i < products.length; i++) {
+    let product = products[i];
+
+    sectionHTML += `
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+        <div class="card">
+          <div class="mb-1 p-3 d-flex justify-content-center align-items-center" style="height: 100%">
+            <img src="./${product.image}" class="img-fluid" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+          <div class="overflow-hidden px-3 mt-2" style="height: 50px">
+            ${product.name}
+          </div>
+          <div class="mb-2 px-3 fw-bold">$${product.priceInCents / 100}</div>
+        </div>
+      </div>`;
+  }
+
+  sectionHTML += `</div>`;
   return sectionHTML;
 }
+
 
 // Generate HTML for products
 function generateProductHTML(products) {
