@@ -4,13 +4,13 @@
       {
         "name": "Dog product 1",
         "description": "Description for dog product 1",
-        "image": "images/dogProducts/dog-chew-toy.jpg",
+        "image": "images/dogProducts/dog-product1.jpg",
         "priceInCents": 1599
       },
       {
         "name": "Dog product 2",
         "description": "Description for dog product 2",
-        "image": "images/dogProducts/dog-chew-toy.jpg",
+        "image": "images/dogProducts/dog-product2.jpg",
         "priceInCents": 1899
       }
     ],
@@ -18,13 +18,13 @@
       {
         "name": "Dog clinic 1",
         "description": "Description for dog clinic 1",
-        "image": "images/dogProducts/dog-chew-toy.jpg",
+        "image": "images/dogClinics/dog-clinic1.jpg",
         "priceInCents": 2599
       },
       {
         "name": "Dog clinic 2",
         "description": "Description for dog clinic 2",
-        "image": "images/dogProducts/dog-chew-toy.jpg",
+        "image": "images/dogClinics/dog-clinic2.jpg",
         "priceInCents": 2999
       }
     ],
@@ -32,13 +32,13 @@
       {
         "name": "Dog food 1",
         "description": "Description for dog food 1",
-        "image": "images/dogProducts/dog-chew-toy.jpg",
+        "image": "images/dogFood/dog-food1.jpg",
         "priceInCents": 1299
       },
       {
         "name": "Dog food 2",
         "description": "Description for dog food 2",
-        "image": "images/dogProducts/dog-chew-toy.jpg",
+        "image": "images/dogFood/dog-food2.jpg",
         "priceInCents": 1599
       }
     ]
