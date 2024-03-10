@@ -1,0 +1,54 @@
+{
+  "dogs": [
+    {
+      "name": "Dog chew toy",
+      "description": "This is a description for this item",
+      "image": "images/dogProducts/dog-chew-toy.jpg",
+      "priceInCents": 1299
+    }
+  ],
+  "cats": {
+    "products": [
+      {
+        "name": "Cat product 1",
+        "description": "Description for cat product 1",
+        "image": "images/catProducts/cat-bed.jpg",
+        "priceInCents": 1599
+      },
+      {
+        "name": "Cat product 2",
+        "description": "Description for cat product 2",
+        "image": "images/catProducts/cat-bed.jpg",
+        "priceInCents": 1899
+      }
+    ],
+    "clinics": [
+      {
+        "name": "Cat clinic 1",
+        "description": "Description for cat clinic 1",
+        "image": "images/catProducts/cat-bed.jpg",
+        "priceInCents": 2599
+      },
+      {
+        "name": "Cat clinic 2",
+        "description": "Description for cat clinic 2",
+        "image": "images/catProducts/cat-bed.jpg",
+        "priceInCents": 2999
+      }
+    ],
+    "food": [
+      {
+        "name": "Cat food 1",
+        "description": "Description for cat food 1",
+        "image": "images/catProducts/cat-bed.jpg",
+        "priceInCents": 1299
+      },
+      {
+        "name": "Cat food 2",
+        "description": "Description for cat food 2",
+        "image": "images/catProducts/cat-bed.jpg",
+        "priceInCents": 1599
+      }
+    ]
+  }
+}
