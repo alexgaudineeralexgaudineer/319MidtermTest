@@ -11,8 +11,8 @@ fetch('./data.json')
 //load products grid with all the data in the data.json file
 function loadProducts(data) {
   let productHTML = ``;
-  for (let i = 0; i < data.dogs.length; i++) {
-    let product = data.dogs[i];
+  for (let i = 0; i < data.cats.length; i++) {
+    let product = data.cats[i];
 
     // add items to the displayed HTML
     productHTML = productHTML + `<div class="col d-flex flex-column">
