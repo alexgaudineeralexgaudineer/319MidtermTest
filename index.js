@@ -4,16 +4,18 @@ let productsGrid = document.getElementById("products-grid");
 fetch('./data.json')
   .then((response) => response.json())
   .then((data) => {
+    console.log("Data:", data); // Log the received data
     loadDogProducts(data.dogs.products);
     loadDogClinics(data.dogs.clinics);
     loadDogFood(data.dogs.food);
   })
   .catch(function (err) {
-    console.log("ERROR" + err);
+    console.error("Error fetching data:", err); // Log any fetch errors
   });
 
 // load dog products
 function loadDogProducts(products) {
+  console.log("Loading Dog Products:", products); // Log the products being loaded
   let productHTML = generateProductHTML(products);
   productsGrid.innerHTML += `<div class="row mb-4"><h3>Dog Products</h3></div>`;
   productsGrid.innerHTML += productHTML;
@@ -21,6 +23,7 @@ function loadDogProducts(products) {
 
 // load dog clinics
 function loadDogClinics(clinics) {
+  console.log("Loading Dog Clinics:", clinics); // Log the clinics being loaded
   let clinicHTML = generateProductHTML(clinics);
   productsGrid.innerHTML += `<div class="row mb-4"><h3>Dog Clinics</h3></div>`;
   productsGrid.innerHTML += clinicHTML;
@@ -28,6 +31,7 @@ function loadDogClinics(clinics) {
 
 // load dog food
 function loadDogFood(food) {
+  console.log("Loading Dog Food:", food); // Log the food being loaded
   let foodHTML = generateProductHTML(food);
   productsGrid.innerHTML += `<div class="row mb-4"><h3>Dog Food</h3></div>`;
   productsGrid.innerHTML += foodHTML;
