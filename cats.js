@@ -47,10 +47,14 @@ function createSection(title, content) {
 }
 
 // generate HTML for products
+// generate HTML for products
 function generateProductHTML(products) {
+  console.log("Generating HTML for products:", products);
   let productHTML = '';
   for (let i = 0; i < products.length; i++) {
     let product = products[i];
+    console.log("Processing product:", product);
+
     productHTML += `<div class="col d-flex flex-column">
       <div class="card" style="height: 100%;">
         <div class="mb-1 p-3 d-flex justify-content-center align-items-center" style="height: 100px;">
@@ -63,5 +67,8 @@ function generateProductHTML(products) {
       </div>
     </div>`;
   }
+
+  console.log("Generated HTML:", productHTML);
   return productHTML;
 }
+
