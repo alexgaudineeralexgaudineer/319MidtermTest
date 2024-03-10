@@ -4,19 +4,19 @@
       {
         "name": "Dog Chew Toy 1",
         "description": "This is a description for Dog Chew Toy 1",
-        "image": "images/dogProducts/dog-chew-toy1.jpg",
+        "image": "images/dogProducts/dog-product1.jpg",
         "priceInCents": 1299
       },
       {
         "name": "Dog Chew Toy 2",
         "description": "This is a description for Dog Chew Toy 2",
-        "image": "images/dogProducts/dog-chew-toy2.jpg",
+        "image": "images/dogProducts/dog-product2.jpg",
         "priceInCents": 1499
       },
       {
         "name": "Dog Chew Toy 3",
         "description": "This is a description for Dog Chew Toy 3",
-        "image": "images/dogProducts/dog-chew-toy3.jpg",
+        "image": "images/dogProducts/dog-product3.jpg",
         "priceInCents": 1699
       }
     ],
