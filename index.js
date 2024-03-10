@@ -3,7 +3,7 @@ let productsGrid = document.getElementById("products-grid");
 // fetch json data
 fetch('./data.json')
   .then((response) => response.json())
-  .then((products) => loadProducts(products.dogs))
+  .then((data) => loadProducts(data.dogs))
   .catch(function (err) {
     console.log("ERROR" + err);
   });
