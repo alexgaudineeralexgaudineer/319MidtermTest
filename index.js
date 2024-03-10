@@ -5,28 +5,23 @@ fetch('./data.json')
   .then((response) => response.json())
   .then((products) => loadProducts(products))
   .catch(function (err) {
-    console.log("ERROR" + err)
+    console.log("ERROR" + err);
   });
 
 // load products grid with all the data in the data.json file
 function loadProducts(data) {
   let productHTML = ``;
 
-  // Dog Products
-  productHTML += generateProductHTML(data.dogs.products, "Dog Products");
-
-  // Dog Clinics
-  productHTML += generateProductHTML(data.dogs.clinics, "Dog Clinics");
-
-  // Dog Food
-  productHTML += generateProductHTML(data.dogs.food, "Dog Food");
+  productHTML += createSection(data.dogs.products, "Dog Products");
+  productHTML += createSection(data.dogs.clinics, "Dog Clinics");
+  productHTML += createSection(data.dogs.food, "Dog Food");
 
   productsGrid.innerHTML = productHTML;
 }
 
 // Generate HTML for a category
-function generateProductHTML(products, categoryName) {
-  let categoryHTML = `
+function createSection(products, categoryName) {
+  let sectionHTML = `
     <div class="row mb-4">
       <h2>${categoryName}</h2>
   `;
@@ -34,7 +29,7 @@ function generateProductHTML(products, categoryName) {
   for (let i = 0; i < products.length; i++) {
     let product = products[i];
 
-    categoryHTML += `
+    sectionHTML += `
       <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="card">
           <div class="mb-1 p-3 d-flex justify-content-center align-items-center" style="height: 200px">
@@ -49,6 +44,6 @@ function generateProductHTML(products, categoryName) {
     `;
   }
 
-  categoryHTML += `</div>`;
-  return categoryHTML;
+  sectionHTML += `</div>`;
+  return sectionHTML;
 }
