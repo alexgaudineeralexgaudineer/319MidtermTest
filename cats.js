@@ -4,6 +4,7 @@ let productsGrid = document.getElementById("products-grid");
 fetch('./data.json')
   .then((response) => response.json())
   .then((data) => {
+    console.log("Data loaded:", data);
     loadCatProducts(data.cats.products);
     loadCatClinics(data.cats.clinics);
     loadCatFood(data.cats.food);
@@ -14,16 +15,19 @@ fetch('./data.json')
 
 // load cat products
 function loadCatProducts(products) {
+  console.log("Loading Cat Products:", products);
   createSection("Cat Products", generateProductHTML(products));
 }
 
 // load cat clinics
 function loadCatClinics(clinics) {
+  console.log("Loading Cat Clinics:", clinics);
   createSection("Cat Clinics", generateProductHTML(clinics));
 }
 
 // load cat food
 function loadCatFood(food) {
+  console.log("Loading Cat Food:", food);
   createSection("Cat Food", generateProductHTML(food));
 }
 
