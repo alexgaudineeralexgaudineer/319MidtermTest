@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.add-button {
+    height: 30px;
+    width: 30px;
+    background-color: lightgrey;
+    border-width: 2px;
+    border-color: black;
+}
